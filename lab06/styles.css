@@ -2,10 +2,10 @@ body {
      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
     }
 h1, h2 {
-    color: salmon
+    color: turquoise
 }
 .evenrow { 
-    color: lightblue
+    background-color:rgb(206, 231, 229)
 }
 
 h1 { 
