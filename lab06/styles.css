@@ -1,0 +1,19 @@
+body {
+     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+    }
+h1, h2 {
+    color: salmon
+}
+ 
+
+.evenrow { 
+    color: lightblue
+}
+
+h1 { 
+    font-size: 1.7 em
+}
+
+h2 {
+     font-size: 1.2 em
+}
