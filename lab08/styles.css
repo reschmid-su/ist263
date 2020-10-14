@@ -28,10 +28,11 @@ h2 {
 
 nav { 
     background-color: #031d33;
-    padding: 20px;
-    margin-bottom: 50px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    margin-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 nav a {color:#c2e7ff}
