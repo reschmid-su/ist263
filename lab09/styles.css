@@ -39,3 +39,7 @@ nav a {color:#c2e7ff}
 nav a:hover {
     background-color: #018AAE;
 }
+
+.picsz { 
+    max-width: 100%;
+}
