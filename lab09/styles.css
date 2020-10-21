@@ -1,0 +1,41 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #e5f3fc; 
+   }
+p {
+   color: #031d33;
+}
+
+a:link { 
+    color: #018AAE; 
+}
+
+a.visited { 
+    color: #a1bcc4; 
+}
+
+h1 { 
+   color:#73DFFB;
+   font-size: 2 em;
+   margin: 30px;
+}
+
+h2 {
+    color: #031d33; 
+    font-size: 1.2 em;
+    margin: 30px;
+}
+
+nav { 
+    background-color: #031d33;
+    padding: 20px;
+    
+    margin-bottom:20px;
+     
+}
+
+nav a {color:#c2e7ff}
+
+nav a:hover {
+    background-color: #018AAE;
+}
