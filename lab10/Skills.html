@@ -6,6 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <title>Skills</title> 
         <style> 
+
+#skip-to-content {
+            position: absolute; 
+            left: -999px;  /* positions skip to content off screen */
+            background-color: white;
+            border: 1px solid gray;
+            }
+        #skip-to-content:focus {position: absolute; left: 10px;}
+
+
+
         table { border-collapse: collapse;}
         table, th,td {border: 1px solid black;}
         </style>
@@ -20,6 +31,7 @@
         <span class= "pipe"> | </span>
         <a href="Contact.html">Contact</a>
     </nav>
+    <a id="skip-to-content" href="#content">Skip to Content</a>
 
 <main> 
       

@@ -8,6 +8,14 @@
       
         <style>
              .quote {float: right;}
+
+             #skip-to-content {
+            position: absolute; 
+            left: -999px;  /* positions skip to content off screen */
+            background-color: white;
+            border: 1px solid gray;
+            }
+        #skip-to-content:focus {position: absolute; left: 10px;}
         </style>
     </head>
 
@@ -19,7 +27,7 @@
             <span class= "pipe"> | </span>
             <a href="Contact.html">Contact</a>
         </nav>
-
+        <a id="skip-to-content" href="#content">Skip to Content</a>
 
        <header><img class= "picsz" src="../images/lab05_photoshop.png" alt = "Rebecca Schmidt 3D Artist"></header> 
 
