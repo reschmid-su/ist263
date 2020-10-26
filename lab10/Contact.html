@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang = "en">
+    
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title> 
+        <link rel="stylesheet" href="styles.css">
+        <style>
+         
+        
+
+
+        .clear {clear:both;}
+        p { 
+            float: left;
+        }
+            
+        .boxes {display:flex; padding:20px; margin:10px;}
+        .box1{background-color:#031d33; border-radius:1em; flex:1; margin-left:60px; margin-right: 60px; margin-bottom: 20px;}
+
+        .boxes2 {display:flex; padding:20px; margin:10px;}
+        .box2{background-color: #031d33; border-radius:1em; flex:1; margin-left:60px; margin-right: 60px; margin-bottom: 20px;}
+
+      
+      
+          
+        .form {display:flex; padding:20px; flex-wrap: wrap;}
+        .form1 {flex:1; margin:10px;order:2;}
+        .form2 {flex:1; margin:10px;order:1;}
+
+        .info{display:flex; padding:20px;}
+        .info1 {flex:3; margin:10px;order:1;}
+        .info2 {flex:3; margin:10px;order:2;}
+        </style>
+    </head>
+
+
+
+
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+           <span class="pipe"> | </span>
+            <a href="Skills.html">Skills</a>
+            <span class= "pipe"> | </span>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+
+        <h1>Contact</h1>
+
+      
+        <section class="boxes">
+            
+        
+            <div class="box1">
+
+                    <h2> Address</h2>
+                
+                    <div class= "info">
+                            <div class= "info2"> 
+                                    <p> 
+                                        Rebecca Schmidt <br>        
+                                        700 Euclid Avenue<br>
+                                        Syracuse, NY 13210
+                                        </p>
+
+
+                                        <div class= "clear"></div> 
+
+                            </div>
+                            
+                            <div class= "info2">
+                                <br>
+                                <a href= "mailto:reschmid@syr.edu">Rebecca Schmidt Email</a>
+                                    <br>
+                                    <br>
+        
+                                <a href="http://www.linkedin.com/in/reschmid305" target="_blank"> <img src= "../images/logo_resized.png" alt= "My Linkedin Profile" width= 20 height= 20 ></a>  
+                                
+                                <a href="http://www.linkedin.com/in/reschmid305" target="_blank">My Linkedin Profile </a> 
+                            
+                            </div>
+                    </div>
+            </div>
+
+        </section>
+    
+
+
+
+        <div class= "boxes2">
+        
+            <div class= "box2">
+                
+                <div class= "form">
+                    <br> <iframe class="form1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.2410794814705!2d-76.12510268424658!3d43.03635890011496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f37250d7e5e5%3A0x4855ca4870704d7e!2s700%20Euclid%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1599691473390!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <div class= "clear"></div>
+
+                        <br>
+        
+                            <div class= "form2">
+                                <form action= "mailto:reschmid@syr.edu" method= "post">
+                
+                                <label for= "name">Your name:</label> <br>
+                                <input type="text" id="name" name="name"> 
+            
+                                <br><br>
+                                <label for="student">Are you a student?</label>
+                                <select id= "student" name ="student">
+                                    <option value= "Y">Yes</option>
+                                    <option value="N">No</option>
+                                </select>
+                                <br> <br><br>
+                                <textarea name="message" rows= "5" cols="35">
+Type your message to Rebecca here.  
+                                </textarea>
+                                <br>
+                                <input type="submit" value="Send">
+                                </form>
+
+
+                            </div>
+                </div>
+            </div>
+        </div>
+    
+
+    
+       
+    </body> 
+
+</html> 
