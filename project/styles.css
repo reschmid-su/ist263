@@ -15,6 +15,8 @@ a.visited {
     color: #a1bcc4; 
 }
 
+section { margin-left:70px; margin-right: 70px;}
+
 ul {font-size: 1.2em;}
 
 .center { 
