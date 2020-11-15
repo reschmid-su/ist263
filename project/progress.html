@@ -4,87 +4,231 @@
     <head>
         <meta charset="utf-8"> 
         <title>Progress</title> 
-    </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+           #skip-to-content {
+           position: absolute; 
+           left: -999px;  /* positions skip to content off screen */
+           background-color: rgb(0, 44, 73);
+           border: 1px solid #ffffff;
+           }
+       #skip-to-content:focus {position: absolute; left: 10px;}
+           .imageSpread {margin-left:20px; margin-right:20px;}
+
+      .progpage {display:flex; padding:20px; margin-left:70px; margin-right:70px; flex-direction: column; align-items: center; background-color:#f1fadd; } /* flexbox for whole page */
+        .intro{flex-wrap: wrap;    margin-left:60px; margin-right: 60px;  margin-bottom: 20px;    }
+        .intro1 { flex-wrap:wrap;   margin-left: 100px; margin-right:100px; margin-bottom:70px; }
+        .intro2 {flex-wrap:wrap;  margin-left:9%; }
+        .pics{ padding: 20px; margin-left:60px; margin-right: 60px; margin-bottom: 20px; }
+
+       
+
+
+        .icons { display:flex; padding: 10px; margin-left: 42%;}
+        .email { margin: 20px; }
+        .linkedin { margin: 20px; }
+        .website { margin: 20px; }
+         
+
+ 
+
+    </style> 
+
+
+    <script>
+                var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+    </script>
+
+ </head>
+
+
 
     <body>
+
+        <a id="skip-to-content" href="#content">Skip to Content</a> 
+
+
         <nav>
             <a href="home.html">Home</a>
-            |
+            <span class="pipe"> | </span>
             <a href="research.html">Research</a>
-            |
-       <!-- add in <span class="pipe"> | </span>-->
+            <span class="pipe"> | </span>
             <a href="projectInfo.html">Project Info</a>
-            |       
-        <!-- add in <span class="pipe"> | </span>-->      
+            <span class="pipe"> | </span>  
             <a href="progress.html">Progress</a>
         </nav>
         
-        <main>
-<h1> Project Progress</h1> <br> 
-<p> In May 2020, I began to learn programs that would help me model, texture, animate, sculpt, and develop a virtual reality game. 
-    These programs include Photoshop, Blender, Houdini, Substance Painter, Autodesk Maya, Zbrush, and Unreal Engine. 
-    In order to develop a realistic environment I would need models of rocks, trees, bushes, plants, flowers, and terrain, 
-    as well as materials for all of those assets. By August 2020 I was able to begin developing assets to use in the game.
-    On this page you will see the most recent verisons of models, terrains, and some materials as the project continues to be developed. </p> 
+<main class= "progpage">
 
-<br>
-<br> 
-<div> 
-    <img src= "media/photoshop.png" alt= "Photoshop logo" >
-    <img src= "media/blender.png" alt= "Blender logo">
-    <img src= "media/Houdini3D_icon.png" alt= "Houdini logo">
-    <img src= "media/substance.jpg" alt= "Substance Painter logo">
-    <img src= "media/maya.jpg" alt= "Autodesk Maya logo">
-    <img src= "media/zbrush.png" alt= "Zbrush logo">
-    <img src= "media/unreal.jpg" alt= "Unreal Engine logo">
+            <a id="content"></a> <!-- tells computer where content starts for accessiblity-->
+
+
+<section class= "intro"> 
+    
+    
+    <div class="intro1">    
+    <h1 class= "center"> Progress</h1> <br> 
+        <p class= "center"> In May 2020, I began to learn programs that would help me model, texture, animate, sculpt, and develop a virtual reality game. 
+            These programs include Photoshop, Blender, Houdini, Substance Painter, Autodesk Maya, Zbrush, and Unreal Engine. 
+            In order to develop a realistic environment I would need models of rocks, trees, bushes, plants, flowers, and terrain, 
+            as well as materials for all of those assets. By August 2020 I was able to begin developing assets to use in the game.
+            On this page you will see the most recent verisons of models, terrains, and some materials, as the project continues to be developed. </p> 
+        </div>
+
+
+     
+        <div class="intro2"> 
+            <img class="imageSpread" src= "media/photoshop.png" alt= "Photoshop logo"  >
+            <img class="imageSpread"  src= "media/blender.png" alt= "Blender logo">
+            <img class="imageSpread"  src= "media/Houdini3D_icon.png" alt= "Houdini logo">
+            <img class="imageSpread" src= "media/substance.jpg" alt= "Substance Painter logo">
+            <img class="imageSpread"  src= "media/maya.jpg" alt= "Autodesk Maya logo">
+            <img class="imageSpread"  src= "media/zbrush.png" alt= "Zbrush logo">
+            <img class="imageSpread"  src= "media/unreal.jpg" alt= "Unreal Engine logo">
+
+        </div>
+</section>
+
+<hr>
+
+<div class="pics">
+
+ 
+
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 10</div>
+      <img src= "media/mountain_fog.png" alt= "CGI Terrain01" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 10</div>
+      <img src= "media/textLand02.png" alt= "CGI Terrain04" style="width:100%">
+ 
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 10</div>
+      <img src= "media/s.png" alt= "CGI Terrain02" style="width:100%">
+   
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 10</div>
+        <img src= "media/screenshot.png" alt= "CGI Terrain03" style="width:100%">
+        
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 10</div>
+        <img src= "media/shortTreeRender.png" alt= "Tree01" style="width:100%">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 10</div>
+        <img src= "media/bridge.png" alt= "Asset01" style="width:100%">
+        
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 10</div>
+        <img src= "media/grass02.png" alt= "Asset02" style="width:100%">
+      
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 10</div>
+        <img src= "media/grass03.png" alt= "Asset03" style="width:100%">
+        
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 10</div>
+        <img src= "media/boulder_01.png" alt= "Asset04" style="width:100%">
+         
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 10</div>
+        <img src= "media/rocks.png" alt= "Asset05" style="width:100%">
+        
+      </div>
+
+
+
+
+
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+
+
+  </div>
+    
 
 </div>
-<br> <br> 
 
-<hr> <!-- LINE -->
 
+    </main>
 <br> 
+    <hr>
 
-        <div>
-            <p> Terrain </p>
-
-            <img src= "media/mountain_fog.png" alt= "CGI Terrain01">
-            <img src= "media/textLand02.png" alt= "CGI Terrain04">
-            <img src= "media/s.png" alt= "CGI Terrain02">
-            <img src= "media/screenshot.png" alt= "CGI Terrain03">
-        </div>
-
-        <br> 
-        <div>
-            <p>Trees </p>
-            <img src= "media/shortTreeRender.png" alt= "Tree01">
-
-        </div>
-
-        <div>
-            <p>Various Elements</p>
-            <img src= "media/bridge.png" alt= "Asset01">
-            <img src= "media/grass02.png" alt= "Asset02">
-            <img src= "media/grass03.png" alt= "Asset03">
-            <img src= "media/boulder_01.png" alt= "Asset04">
-            <img src= "media/rocks.png" alt= "Asset05">
-
-        </div>
-
-
-<br> 
-</main>  
-
-        <footer>
-            <br>
-            <br>
-            <br>
-            <hr>
-            <br>
-            <br>
-            <a href="http://www.linkedin.com/in/reschmid305" target="_blank"> <img src= "media/linkedin.png" alt= "My Linkedin Profile" width=30 height= 30  ></a> 
-            <a href="mailto:reschmid@syr.edu" target="_blank"> <img src= "media/email.png" alt= "Rebecca Schmidt's Email"  width=30 height= 20  ></a> 
-            <a href="http://www.rs-cgi.com" target="_blank"> <img src= "media/website.png" alt= "Rebecca Schmidt's Website" width=30 height= 30   ></a> 
+        <footer class="icons">
+          
+            <a class= "linkedin" href="http://www.linkedin.com/in/reschmid305" target="_blank"> <img src= "media/linkedin.png" alt= "My Linkedin Profile" width=30 height= 30   ></a> 
+            <a class= "email" href="mailto:reschmid@syr.edu" target="_blank"> <img src= "media/email.png" alt= "Rebecca Schmidt's Email"  width=30 height= 20  ></a> 
+            <a class="website" href="http://www.rs-cgi.com" target="_blank"> <img src= "media/website.png" alt= "Rebecca Schmidt's Website" width=30 height= 30  ></a> 
             <!-- need space between each element-->
             </footer>
     </body> 

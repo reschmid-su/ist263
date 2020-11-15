@@ -4,60 +4,109 @@
     <head>
         <meta charset="utf-8"> 
         <title>Home</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+         
+
+           #skip-to-content {
+           position: absolute; 
+           left: -999px;  /* positions skip to content off screen */
+           background-color: rgb(0, 44, 73);
+           border: 1px solid #ffffff;
+           }
+       #skip-to-content:focus {position: absolute; left: 10px;}
+
+
+
+       .homePage{display:flex; background-color: #f1fadd; padding:20px; flex-direction: column; margin-left:70px; margin-right: 70px; align-items: center;  }
+       .textinfo {margin-left:20%; margin-right:20%; margin-bottom:50px;  }
+      
+      
+       .pages {flex-direction: row; } /* container for 3 images and buttons */
+
+         
+        .images {margin:10px;}
+        .image1 {margin-right:30px; margin-bottom: 30px;}
+        .image2 {margin-right:30px; margin-left: 30px; margin-bottom: 30px;}
+        
+        .image3 { margin-left: 30px; margin-bottom: 30px;}
+        .buttons {margin:10px;}
+
+        .button1 {margin-left: 40px; margin-right:30px; margin-bottom: 30px;}
+        .button2 {margin-right:20px; margin-left: 100px; margin-bottom: 30px;}
+        
+        .button3 { margin-left: 100px; margin-bottom: 30px;}
+
+
+
+       .icons { display:flex; padding: 10px; margin-left: 42%;}
+        .email { margin: 20px; }
+        .linkedin { margin: 20px; }
+        .website { margin: 20px; }
+
+
+
+       </style>
+
     </head>
 
     <body>
+
+        <a id="skip-to-content" href="#content">Skip to Content</a> 
+
+
         <nav>
             <a href="home.html">Home</a>
-            |
+            <span class="pipe"> | </span>
             <a href="research.html">Research</a>
-            |
-       <!-- add in <span class="pipe"> | </span>-->
+            <span class="pipe"> | </span>
             <a href="projectInfo.html">Project Info</a>
-            |       
-        <!-- add in <span class="pipe"> | </span>-->      
+            <span class="pipe"> | </span>  
             <a href="progress.html">Progress</a>
         </nav>
-
-        <main> 
         
-         <h1> Virtual Reality Therapy</h1>
-         <p>This research project is being completed with help of the S.O.U.R.C.E program at Syracuse University</p>
+     
+        <main class="homePage">
+            <a id="content"></a> <!-- tells computer where content starts for accessiblity-->
+
+        
+         <h1 class = "center"> Virtual Reality Therapy</h1>
+
+        
+        <div class="textinfo"></div>
+         <p class="center">This research project is being completed with help of the S.O.U.R.C.E program at Syracuse University</p>
          <br>
-         <p> For the 2020-2021 academic year, Rebecca Schmidt, a senior Computer Art and Animaiton major, is devoting her thesis to researching the impact that virtual reality
+         <p class="center"> For the 2020-2021 academic year, Rebecca Schmidt, a senior Computer Art and Animaiton major, is devoting her thesis to researching the impact that virtual reality
              can have on patients as a form of therapy treatment. In addition to research, she is developing her own VR experience based on the research she collects.</p>
-            <br>
-             
-   
-             <img src= "media/home_01.png" alt= "Oculus Quest Headset"  >
-             <button onclick= "document.location= 'research.html'"> View Research</button>
+      </div>
+             <div class="pages">
+                    
+                <div class="images">
+                    <img class="image1"src= "media/home_01.png" alt= "Oculus Quest Headset" margin=20px; >
+                    <img class="image2" src= "media/home_02.png" alt= "Maroon Bells, CO" margin=20px; >                    
+                    <img class="image3" src= "media/home_03.png" alt= "CGI Mountains"  margin=20px;>
+                </div>
 
-
-             <img src= "media/home_02.png" alt= "Maroon Bells, CO"  >
-             <button onclick= "document.location= 'projectInfo.html'"> View Project Info</button>
-
-
-             <img src= "media/home_03.png" alt= "CGI Mountains"  >
-             <button onclick= "document.location= 'progress.html'"> View Progress</button>
-
-
+                <div class="buttons">
+                    <button class="button1"  onclick= "document.location= 'research.html'"> View Research</button>                
+                    <button class="button2" onclick= "document.location= 'projectInfo.html'"> View Project Info</button>
+                    <button class="button3" onclick= "document.location= 'progress.html'"> View Progress</button>
+                </div>
+            </div>
             </main>
 
 
+            <hr>
 
-             <footer>
-                <br>
-                <br>
-                <br>
-                <hr>
-                <br>
-                <br>
-                <a href="http://www.linkedin.com/in/reschmid305" target="_blank"> <img src= "media/linkedin.png" alt= "My Linkedin Profile" width=30 height= 30  ></a> 
-                <a href="mailto:reschmid@syr.edu" target="_blank"> <img src= "media/email.png" alt= "Rebecca Schmidt's Email"  width=30 height= 20  ></a> 
-                <a href="http://www.rs-cgi.com" target="_blank"> <img src= "media/website.png" alt= "Rebecca Schmidt's Website" width=30 height= 30   ></a> 
+            <footer class="icons">
+              
+                <a class= "linkedin" href="http://www.linkedin.com/in/reschmid305" target="_blank"> <img src= "media/linkedin.png" alt= "My Linkedin Profile" width=30 height= 30   ></a> 
+                <a class= "email" href="mailto:reschmid@syr.edu" target="_blank"> <img src= "media/email.png" alt= "Rebecca Schmidt's Email"  width=30 height= 20  ></a> 
+                <a class="website" href="http://www.rs-cgi.com" target="_blank"> <img src= "media/website.png" alt= "Rebecca Schmidt's Website" width=30 height= 30  ></a> 
                 <!-- need space between each element-->
                 </footer>
-
 
 
             </body> 

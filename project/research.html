@@ -4,37 +4,79 @@
     <head>
         <meta charset="utf-8"> 
         <title>Research</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+           #skip-to-content {
+           position: absolute; 
+           left: -999px;  /* positions skip to content off screen */
+           background-color: rgb(0, 44, 73);
+           border: 1px solid #ffffff;
+           }
+       #skip-to-content:focus {position: absolute; left: 10px;}
+
+       .goRight { margin: 20px; float:right;}
+
+       .Researchpage {display:flex; padding:20px; margin-left:70px; margin-right:70px; flex-direction: column; align-items: center; background-color:#f1fadd; }
+
+       .clear { float:none;}
+
+       
+
+
+
+       .icons { display:flex; padding: 10px; margin-left: 42%;}
+        .email { margin: 20px; }
+        .linkedin { margin: 20px; }
+        .website { margin: 20px; }
+       </style>
+
     </head>
 
     <body>
+
+        <a id="skip-to-content" href="#content">Skip to Content</a> 
+
+
         <nav>
             <a href="home.html">Home</a>
-            |
+            <span class="pipe"> | </span>
             <a href="research.html">Research</a>
-            |
-       <!-- add in <span class="pipe"> | </span>-->
+            <span class="pipe"> | </span>
             <a href="projectInfo.html">Project Info</a>
-            |       
-        <!-- add in <span class="pipe"> | </span>-->      
+            <span class="pipe"> | </span>  
             <a href="progress.html">Progress</a>
         </nav>
+        
+        <main class="Researchpage">
 
-<main>
-        <h1> RESEARCH </h1>
+            <a id="content"></a> <!-- tells computer where content starts for accessiblity-->
+
+        <h1 class="center"> RESEARCH </h1>
+        <br>
+
+<section >
         <h2> Virtual Reality Therapy</h2>
-<div>        <p> As technology continues to evolve and develop, companies become aware of the desire for consumers to buy 
+          
+         <img class="goRight" src= "media/clouds.jpg" alt="Woman wearing VR headset"> 
+    
+    <p> As technology continues to evolve and develop, companies become aware of the desire for consumers to buy 
             technologies that will entertain and make daily life better. Virtual reality technology has become more 
             affordable and accessible to the public in recent years due to demand and the development of better technology. 
             Although virtual reality is typically used for entertainment, one of its many uses can assist therapy patients
              in their treatments. This technology provides a more cost-effective, realistic experience that does not have to 
              physically place a patient in a new or unfamiliar surrounding, allowing them to be comfortable at all times.  
          </p> 
-        </div>
+        
 
+  
 
-         <img src= "media/clouds.jpg" alt="Woman wearing VR headset"> 
-         
-         <div>
+        </section>
+
+<div class="clear"></div>
+
+         <div >
          <p> Virtual Reality can be used to treat conditions such as: 
          <ul>
             <li>Social Anxiety Disorder </li>
@@ -59,6 +101,8 @@
 
  
         </p>
+
+
         <img src= "media/ptsd_treatment.jpg" alt="PTSD Treatment"> 
 <div>
         <p> 
@@ -97,16 +141,13 @@
 </p>
 </section>
 
-<footer>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
-    <a href="http://www.linkedin.com/in/reschmid305" target="_blank"> <img src= "media/linkedin.png" alt= "My Linkedin Profile" width=30 height= 30  ></a> 
-    <a href="mailto:reschmid@syr.edu" target="_blank"> <img src= "media/email.png" alt= "Rebecca Schmidt's Email"  width=30 height= 20  ></a> 
-    <a href="http://www.rs-cgi.com" target="_blank"> <img src= "media/website.png" alt= "Rebecca Schmidt's Website" width=30 height= 30   ></a> 
+<hr>
+
+<footer class="icons">
+  
+    <a class= "linkedin" href="http://www.linkedin.com/in/reschmid305" target="_blank"> <img src= "media/linkedin.png" alt= "My Linkedin Profile" width=30 height= 30   ></a> 
+    <a class= "email" href="mailto:reschmid@syr.edu" target="_blank"> <img src= "media/email.png" alt= "Rebecca Schmidt's Email"  width=30 height= 20  ></a> 
+    <a class="website" href="http://www.rs-cgi.com" target="_blank"> <img src= "media/website.png" alt= "Rebecca Schmidt's Website" width=30 height= 30  ></a> 
     <!-- need space between each element-->
     </footer>
 

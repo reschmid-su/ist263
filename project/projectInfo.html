@@ -3,104 +3,126 @@
     
     <head>
         <meta charset="utf-8"> 
-        <title>Project Information</title> 
+        <title>Project Info</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+           #skip-to-content {
+           position: absolute; 
+           left: -999px;  /* positions skip to content off screen */
+           background-color: rgb(0, 44, 73);
+           border: 1px solid #ffffff;
+           }
+       #skip-to-content:focus {position: absolute; left: 10px;}
+
+       
+       .icons { display:flex; padding: 10px; margin-left: 42%;}
+        .email { margin: 20px; }
+        .linkedin { margin: 20px; }
+        .website { margin: 20px; } 
+       </style>
+
     </head>
 
     <body>
+
+        <a id="skip-to-content" href="#content">Skip to Content</a> 
+
+
         <nav>
             <a href="home.html">Home</a>
-            |
+            <span class="pipe"> | </span>
             <a href="research.html">Research</a>
-            |
-       <!-- add in <span class="pipe"> | </span>-->
+            <span class="pipe"> | </span>
             <a href="projectInfo.html">Project Info</a>
-            |       
-        <!-- add in <span class="pipe"> | </span>-->      
+            <span class="pipe"> | </span>  
             <a href="progress.html">Progress</a>
         </nav>
-<section>
-<h1> Project Goals</h1>
+        
+      
 
-<p> This virtual reality will develop a meditative therapy experience to reduce general anxiety and stress. The player will be placed in a natural environment with mountains and water. A heavy importance will be placed on sound design and visuals to fully immerse the player into a different world. While developing this project, there will be three key steps. Selecting a targeted area, learning new softwares, and developing the experience. <br> In order to decide on a targeted area of therapy for this project, I will research the treatments and conditions in which VR would be beneficial for and previous studies that have been conducted using similar treatment methods. Learning new softwares is an important step to this project, many of the programs used for game development are difficult but vital to the gamming and animation industry. Throughout the summer 2020 I will become and expereinced user in many of these important softwares. With the two previous steps completed, I will be able to develop a virtual reality experience that can provide a positive experience for any player who would like to reduce general stress and anxiety.     </p>
+            <a id="content"></a> <!-- tells computer where content starts for accessiblity-->
 
- 
-<hr> 
-<br> 
+            <section>
+            <h1 class="center"> PROJECT GOALS</h1>
 
-<img src = "media/coMountains.png" alt= "Colorado Mountains"> <p>Mt Sniktau, CO</p>
-<img src= "media/maroonBells.png" alt="Maroon Bells, CO"> <p>Maroon Bells, CO</p>
+            <p class="center"> This virtual reality will develop a meditative therapy experience to reduce general anxiety and stress. The player will be placed in a natural environment with mountains and water. A heavy importance will be placed on sound design and visuals to fully immerse the player into a different world. While developing this project, there will be three key steps. Selecting a targeted area, learning new softwares, and developing the experience. <br> In order to decide on a targeted area of therapy for this project, I will research the treatments and conditions in which VR would be beneficial for and previous studies that have been conducted using similar treatment methods. Learning new softwares is an important step to this project, many of the programs used for game development are difficult but vital to the gamming and animation industry. Throughout the summer 2020 I will become and expereinced user in many of these important softwares. With the two previous steps completed, I will be able to develop a virtual reality experience that can provide a positive experience for any player who would like to reduce general stress and anxiety.     </p>
 
-</section>
-<section>
-<h2>Inspiration</h2>
-<p>For this experience I am developing an environment that includes a mountain range that surrounds a small body of water. Some inspiration for this setting comes from Maroon Bell's, Colorado. The player will be able to walk freely around this environment and explore. As the player explores, there will be changing sounds to suit the environment. Over Summer 2020, I captured reference images to not only help with concept design but also to use as textures for my assets, ensuring they will look as accurate as possible. While my passion for hiking and nature inspired the visuals for this project, my history of studying biofeedback therapy motivated me to use my animation major to learn and create new forms of therapy treatments.    </p>
+            
+            <hr> 
+            <br> 
+
+            <img src = "media/coMountains.png" alt= "Colorado Mountains"> <p>Mt Sniktau, CO</p>
+            <img src= "media/maroonBells.png" alt="Maroon Bells, CO"> <p>Maroon Bells, CO</p>
+
+            </section>
+            <section>
+            <h2>Inspiration</h2>
+            <p>For this experience I am developing an environment that includes a mountain range that surrounds a small body of water. Some inspiration for this setting comes from Maroon Bell's, Colorado. The player will be able to walk freely around this environment and explore. As the player explores, there will be changing sounds to suit the environment. Over Summer 2020, I captured reference images to not only help with concept design but also to use as textures for my assets, ensuring they will look as accurate as possible. While my passion for hiking and nature inspired the visuals for this project, my history of studying biofeedback therapy motivated me to use my animation major to learn and create new forms of therapy treatments.    </p>
 
 
-</section>
+            </section>
 
-<section>
-        <!-- ORGANIZE THIS AREA INTO FLEX BOXES -->
-        <h3>Project Timeline </h3> 
-    <div>
-        <p> Summer 2020 <br> 
-            <ul>
-                <li>Research and decide on an area to focus the VR experience on.</li>
-                <li>Learn the softwares needed to create an immersive VR game, and begin asset creation</li>
-            </ul>   
-        </p>
-    </div>
+            <section>
+                    <!-- ORGANIZE THIS AREA INTO FLEX BOXES -->
+                    <h3>Project Timeline </h3> 
+                <div>
+                    <p> Summer 2020 <br> 
+                        <ul>
+                            <li>Research and decide on an area to focus the VR experience on.</li>
+                            <li>Learn the softwares needed to create an immersive VR game, and begin asset creation</li>
+                        </ul>   
+                    </p>
+                </div>
 
-    <div>
-        <p> Sept - Nov 2020 <br> 
-            <ul>
-                <li>Focus on asset creation and gathering textures/materials for each asset.</li>
-                <li>Learn particle simulations for clouds and water effects. </li>
-            </ul> 
-        </p>
-    </div>
+                <div>
+                    <p> Sept - Nov 2020 <br> 
+                        <ul>
+                            <li>Focus on asset creation and gathering textures/materials for each asset.</li>
+                            <li>Learn particle simulations for clouds and water effects. </li>
+                        </ul> 
+                    </p>
+                </div>
 
-    <div>
-        <p>Dec 2020 - Jan 2021<br> 
-            <ul>
-                <li>Import assets into Unreal Game Engine to ensure that they funciton properly. </li>
-                <li>Begin to assemble the terrain with materials and lighting. </li>
-                <li>Leave room for fixing any assets that are not funcitoning correctly. </li>
-            </ul> 
-        </p> 
-    </div>
+                <div>
+                    <p>Dec 2020 - Jan 2021<br> 
+                        <ul>
+                            <li>Import assets into Unreal Game Engine to ensure that they funciton properly. </li>
+                            <li>Begin to assemble the terrain with materials and lighting. </li>
+                            <li>Leave room for fixing any assets that are not funcitoning correctly. </li>
+                        </ul> 
+                    </p> 
+                </div>
 
-    <div>
-        <p>Feb - Apr 2021 <br> 
-            <ul>
-                <li>Make the game playable: begin programming the game and testing the VR headset to make sure it is functioning. </li>
-                <li>Develop sound design to go with the VR environment </li>
-                
-            </ul> 
-        </p> 
-    </div>
+                <div>
+                    <p>Feb - Apr 2021 <br> 
+                        <ul>
+                            <li>Make the game playable: begin programming the game and testing the VR headset to make sure it is functioning. </li>
+                            <li>Develop sound design to go with the VR environment </li>
+                            
+                        </ul> 
+                    </p> 
+                </div>
 
-    <div>
-        <p> May 2021 <br> 
-            <ul>
-                <li>Present the game!</li>
-            </ul> 
-        </p> 
-    </div>
+                <div>
+                    <p> May 2021 <br> 
+                        <ul>
+                            <li>Present the game!</li>
+                        </ul> 
+                    </p> 
+                </div>
 
-        </section>
+                    </section>
+                    <hr>
 
-<footer>
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<a href="http://www.linkedin.com/in/reschmid305" target="_blank"> <img src= "media/linkedin.png" alt= "My Linkedin Profile" width=30 height= 30  ></a> 
-<a href="mailto:reschmid@syr.edu" target="_blank"> <img src= "media/email.png" alt= "Rebecca Schmidt's Email"  width=30 height= 20  ></a> 
-<a href="http://www.rs-cgi.com" target="_blank"> <img src= "media/website.png" alt= "Rebecca Schmidt's Website" width=30 height= 30   ></a> 
-<!-- need space between each element-->
-</footer>
+                    <footer class="icons">
+                      
+                        <a class= "linkedin" href="http://www.linkedin.com/in/reschmid305" target="_blank"> <img src= "media/linkedin.png" alt= "My Linkedin Profile" width=30 height= 30   ></a> 
+                        <a class= "email" href="mailto:reschmid@syr.edu" target="_blank"> <img src= "media/email.png" alt= "Rebecca Schmidt's Email"  width=30 height= 20  ></a> 
+                        <a class="website" href="http://www.rs-cgi.com" target="_blank"> <img src= "media/website.png" alt= "Rebecca Schmidt's Website" width=30 height= 30  ></a> 
+                        <!-- need space between each element-->
+                        </footer>
 
     </body> 
 
