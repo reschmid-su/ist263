@@ -30,13 +30,13 @@ span {
 }
 h1 { 
     font-family: "Arial Black", Gadget, sans-serif; 
-   color: #25351f;
+   color: #11180e;
    font-size: 2 em;
    margin: 30px;
 }
 
 h2 {
-    color: #2f4228; 
+    color: #131b11; 
     font-size: 1.2 em;
     margin: 30px;
 }
@@ -61,9 +61,9 @@ button:hover {
 hr { margin: 70px;}
 
 nav { 
-    background-color: #617052;
+    background-color: #2a3124;
     padding: 15px;
-    color: #cfffbc;
+    color: #e6ffdc;
     margin-left:70px;
     margin-right:70px;
     
