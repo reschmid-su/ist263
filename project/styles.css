@@ -29,13 +29,15 @@ span {
     color: #a1bcc4;
 }
 h1 { 
-    font-family: "Arial Black", Gadget, sans-serif; 
+  font-family: 'Montserrat', sans-serif;
    color: #11180e;
    font-size: 2 em;
    margin: 30px;
 }
 
 h2 {
+
+  font-family: 'Montserrat', sans-serif;
     color: #131b11; 
     font-size: 1.2 em;
     margin: 30px;
@@ -43,6 +45,7 @@ h2 {
 
 button {
         background-color: #617052; 
+        font-family: 'Montserrat', sans-serif;
         border: none;
         border-radius: 20px; 
         color: white;
@@ -62,6 +65,7 @@ hr { margin: 30px;}
 
 nav { 
     background-color: #2a3124;
+    font-family: 'Montserrat', sans-serif;
     padding: 15px;
     color: #e6ffdc;
     margin-left:70px;
